@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Greeting Based on Age</title>
+</head>
+<body>
+  <script>
+    console.log("Hello, welcome to aukaat anusaar izzaat system!");
+
+    const name = prompt("Naam bata:");
+    const age = parseInt(prompt("Umar kitni hai?"));
+
+    let message;
+
+    if (age < 13) {
+      message = "Hi " + name + "! Bacha party! 😄";
+    } else if (age < 20) {
+      message = "Yo " + name + "! Teen vibe! ✌️";
+    } else if (age < 60) {
+      message = "Hello " + name + "! Adulting on! 💪";
+    } else if (age >= 60) {
+      message = "Namaste " + name + " ji! 🙏";
+    } else {
+      message = "Umar thik se likh bhai 😅";
+    }
+
+    alert(message);
+  </script>
+</body>
+</html>

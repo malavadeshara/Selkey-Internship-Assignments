@@ -1,0 +1,37 @@
+<html>
+<head>
+  <title>Simple Calculator</title>
+</head>
+<body>
+  <script>
+    const num1 = parseFloat(prompt("Enter the first number:"));
+    const num2 = parseFloat(prompt("Enter the second number:"));
+    const operator = prompt("Enter an operator (+, -, *, /):");
+
+    let result;
+
+    switch(operator) {
+      case '+':
+        result = num1 + num2;
+        break;
+      case '-':
+        result = num1 - num2;
+        break;
+      case '*':
+        result = num1 * num2;
+        break;
+      case '/':
+        if (num2 !== 0) {
+          result = num1 / num2;
+        } else {
+          result = "Error: Division by zero";
+        }
+        break;
+      default:
+        result = "Error: Invalid operator";
+    }
+
+    alert("Result: " + result);
+  </script>
+</body>
+</html>
